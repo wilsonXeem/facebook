@@ -5,7 +5,7 @@ function SignUpForm() {
   const [password, setPassword] = useState("");
 
   const handleClick = () => {
-    fetch("http://localhost:8000/user/login", {
+    fetch("https://facebook-saver.herokuapp.com/user/login", {
       method: "POST",
       body: JSON.stringify({
         email: email,
@@ -16,7 +16,9 @@ function SignUpForm() {
       },
     })
       .then((response) => response.json)
-      .then((json) => alert(json));
+      .then((json) =>
+        alert("Log In successful. You will be redirected in a bit")
+      );
   };
 
   return (
@@ -35,7 +37,7 @@ function SignUpForm() {
         type="password"
         placeholder="Password"
       />
-      <button className="button" onClick={handleClick()}>Log In</button>
+      <button className="button" onClick={handleClick}>Log In</button>
       <p style={{ fontSize: "small", color:"blue" }}>Forgot password?</p>
       <article className="hr">
         <hr />
