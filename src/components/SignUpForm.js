@@ -36,7 +36,7 @@ function SignUpForm() {
         placeholder="Password"
       />
       <button className="button" onClick={handleClick()}>Log In</button>
-      <p style={{ fontSize: "small" }}>Forgot password?</p>
+      <p style={{ fontSize: "small", color:"blue" }}>Forgot password?</p>
       <article className="hr">
         <hr />
         <p style={{ margin: "14px" }}>or</p> <hr />

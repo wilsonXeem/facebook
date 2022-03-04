@@ -20,14 +20,15 @@ body {
 }
 
 .input {
-  width: 90%;
-  height: 2.3rem;
+  width: 85%;
+  height: 2.8rem;
   border-radius: 3px;
   box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(231, 228, 228);
   border: none;
-  margin: 5px;
+  margin: 2.5px;
   padding-left: 15px;
   background: rgb(243, 242, 239);
+  font-size: 15px;
 }
 
 input:focus {
@@ -35,31 +36,34 @@ input:focus {
 }
 
 .button{
-  width: 95%;
-  height: 2rem;
+  width: 90%;
+  height: 2.4rem;
   border-radius: 3px;
   border: none;
   margin: 5px;
   background: blue;
   color: white;
-  font-weight: bolder;
+  font-weight: 1000;
+  font-size: 15px;
   text-shadow: 1px 1px 3px black;
 }
 
 .create{
-  width: 40%;
-  height: 2rem;
+  width: 50%;
+  height: 2.1rem;
   border-radius: 3px;
   border: none;
   margin: 5px;
   background: green;
   color: white;
-  font-weight: 900;
+  font-weight: 1000;
+  font-size: 15px;
   text-shadow: 1px 1px 3px black;
 }
 
 h1 {
   color: blue;
+  font-size: x-large;
 }
 
 hr {
