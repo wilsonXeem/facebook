@@ -35,13 +35,13 @@ function SignUpForm() {
         type="password"
         placeholder="Password"
       />
-      <input className="button" type="submit" value="Log in" />
+      <button className="button" onClick={handleClick()}>Log In</button>
       <p style={{ fontSize: "small" }}>Forgot password?</p>
       <article className="hr">
         <hr />
         <p style={{ margin: "14px" }}>or</p> <hr />
       </article>
-      <button onClick={handleClick()}>Create new account</button>
+      <button className="create">Create new account</button>
     </>
   );
 }
