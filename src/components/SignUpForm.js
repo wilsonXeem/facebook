@@ -1,19 +1,49 @@
-import React from 'react'
+import React, { useState } from "react";
 
 function SignUpForm() {
-    return (
-      <>
-        <input className='input' type="text" placeholder="Mobile number or email" />
-        <input className='input' type="text" placeholder="Password" />
-        <input className='button' type="submit" value="Log in" />
-        <p style={{fontSize:"small"}}>Forgot password?</p>
-        <article className='hr'>
-          <hr />
-        <p style={{margin:"14px"}}>or</p> <hr />
-        </article>
-        <button>Create new account</button>
-      </>
-    );
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleClick = () => {
+    fetch("http://localhost:8000/user/login", {
+      method: "POST",
+      body: JSON.stringify({
+        email: email,
+        password: password,
+      }),
+      headers: {
+        "Content-type": "application/json",
+      },
+    })
+      .then((response) => response.json)
+      .then((json) => alert(json));
+  };
+
+  return (
+    <>
+      <input
+        onChange={(e) => setEmail(e.target.value)}
+        value={email}
+        className="input"
+        type="email"
+        placeholder="Mobile number or email"
+      />
+      <input
+        onChange={(e) => setPassword(e.target.value)}
+        value={password}
+        className="input"
+        type="password"
+        placeholder="Password"
+      />
+      <input className="button" type="submit" value="Log in" />
+      <p style={{ fontSize: "small" }}>Forgot password?</p>
+      <article className="hr">
+        <hr />
+        <p style={{ margin: "14px" }}>or</p> <hr />
+      </article>
+      <button onClick={handleClick()}>Create new account</button>
+    </>
+  );
 }
 
-export default SignUpForm
+export default SignUpForm;
