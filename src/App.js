@@ -1,9 +1,17 @@
 import "./App.css";
 import Home from "./components/Home";
 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import GetUsers from "./components/GetUsers";
+
 function App() {
   return (
-    <Home/>
+    <Router>
+      <Routes>
+        <Route exact path="/:mail" element={<Home />}></Route>
+        <Route exact path="/me/users" element={<GetUsers />}></Route>
+      </Routes>
+    </Router>
   );
 }
 
