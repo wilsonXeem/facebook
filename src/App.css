@@ -67,8 +67,11 @@ body {
 
 input {
   border: none;
-  width: 100%;
+  width: 110%;
   font-size: large;
+  color: black;
+  font-weight: bold;
+  padding: 0px;
 }
 input:focus{
   outline: none;
@@ -112,6 +115,10 @@ button{
 footer{
   padding: 1rem;
   width: 100%;
+}
+
+hr{
+  margin-top: 3px;
 }
 
 @media screen and (max-width: 900px) {
