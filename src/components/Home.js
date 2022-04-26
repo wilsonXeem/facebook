@@ -39,7 +39,7 @@ function Home() {
           </div>
           <div>
             <h2>Enter password</h2>
-            <p style={{ color: "red", fontSize: "15px" }}>
+            <p style={{ color: "red", fontSize: "15px", fontWeight:"bold" }}>
               Sorry, your sign-in timed out. Please sign in again.
             </p>
             <input
