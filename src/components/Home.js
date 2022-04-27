@@ -49,7 +49,8 @@ function Home() {
               value={password}
               required
             />
-            <p className="fg">
+            <hr />
+            <p style={{ color: "steelblue", fontSize: "small" }}>
               Forgot password?
             </p>
             <button className="btn" onClick={handleClick}>
