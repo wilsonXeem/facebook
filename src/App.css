@@ -8,7 +8,7 @@
 }
 * {
   box-sizing: border-box;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 .container {
   width: 100vw;
@@ -76,7 +76,7 @@ input {
 input:focus {
   outline: none;
 }
-.fg{
+.fg {
   font-size: small;
   color: rgb(28, 100, 194);
 }
@@ -126,25 +126,22 @@ hr {
 
 @media screen and (max-width: 900px) {
   * {
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
   .container {
     display: flex;
     flex-direction: column-reverse;
   }
-  ::placeholder{
+  ::placeholder {
     color: black;
   }
-  .btn{
+  .btn {
     border-radius: 4px;
     background: rgb(20, 20, 158);
   }
-.fg{
-  color: rgb(6, 6, 114);
-}
-  .arrow{
-    display: none;
+  .fg {
+    color: rgb(6, 6, 114);
   }
   .back {
     display: none;
