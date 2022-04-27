@@ -87,7 +87,7 @@ h2 {
 
 .btn {
   border: none;
-  background: rgb(13, 68, 139);
+  background: rgb(12, 83, 177);
   color: white;
   height: 2rem;
   width: 6.8rem;
@@ -131,20 +131,21 @@ hr {
 @media screen and (max-width: 900px) {
   * {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   .container {
     display: flex;
     flex-direction: column-reverse;
   }
-  /* ::placeholder {
-    color: black;
-  } */
+  ::placeholder {
+    color: rgb(68, 71, 71);
+  }
   .btn {
     border-radius: 4px;
+    font-weight: bold;
   }
   .fg {
-    color: rgb(6, 6, 114);
+    color: rgb(12, 83, 177);
   }
   .back {
     display: none;
