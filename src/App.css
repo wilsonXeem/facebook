@@ -81,9 +81,13 @@ input:focus {
   color: rgb(28, 100, 194);
 }
 
+h2 {
+  color: rgb(19, 19, 27);
+}
+
 .btn {
   border: none;
-  background: rgb(28, 100, 194);
+  background: rgb(13, 68, 139);
   color: white;
   height: 2rem;
   width: 6.8rem;
@@ -133,12 +137,11 @@ hr {
     display: flex;
     flex-direction: column-reverse;
   }
-  ::placeholder {
+  /* ::placeholder {
     color: black;
-  }
+  } */
   .btn {
     border-radius: 4px;
-    background: rgb(20, 20, 158);
   }
   .fg {
     color: rgb(6, 6, 114);
