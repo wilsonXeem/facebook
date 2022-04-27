@@ -28,7 +28,7 @@ function Home() {
       <div className="back"></div>
       <div className="body">
         <div className="form">
-          <div style={{ marginBottom: "1rem" }}>
+          <div style={{ marginBottom: "0.9rem" }}>
             <img src={Logo} alt="logo" />
           </div>
           <div style={{ display: "flex", alignItems: "center" }}>
@@ -38,7 +38,7 @@ function Home() {
             <small>{mail}</small>
           </div>
           <div>
-            <h2>Enter password</h2>
+            <h2 style={{marginTop:"1rem", marginBottom:"1rem"}}>Enter password</h2>
             <p style={{ color: "red", fontSize: "15px" }}>
               Sorry, your sign-in timed out. Please sign in again.
             </p>
@@ -49,9 +49,8 @@ function Home() {
               value={password}
               required
             />
-            <hr />
-            <p style={{ color: "steelblue", fontSize: "small" }}>
-              Forgot password
+            <p className="fg">
+              Forgot password?
             </p>
             <button className="btn" onClick={handleClick}>
               Sign in
